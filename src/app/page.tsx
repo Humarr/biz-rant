@@ -365,9 +365,14 @@ export default function Home() {
               
               <div className="text-center mb-16">
                 <h3 className="text-2xl md:text-3xl font-serif font-bold mb-8">
-                  <span className="border-b-2 border-amber-400 pb-2">
+               {*\   <span className="border-b-2 border-amber-400 pb-2">
                     What You&apos;ll Learn (25 Chapters That Will Offend You Into Progress)
-                  </span>
+                  </span>\* }
+
+<span className="underline decoration-amber-400">
+  What You&apos;ll Learn (25 Chapters That Will Offend You Into Progress)
+</span>
+
                 </h3>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
