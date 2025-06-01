@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Inter, Playfair_Display, Poppins } from 'next/font/google'
 import './globals.css'
 
 // Font loading with Next.js font optimization
@@ -15,6 +15,14 @@ const playfair = Playfair_Display({
   display: 'swap',
   weight: ['400', '700', '900']
 })
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  variable: '--font-poppins',
+  display: 'swap',
+  weight: ['400', '700', '900']
+})
+
 
 export const metadata: Metadata = {
   title: 'DON\'T START A BUSINESS... Until You Read This Rant',
@@ -50,7 +58,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable} ${poppins.variable}`}>
       <head>
         {/* Favicon */}
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
